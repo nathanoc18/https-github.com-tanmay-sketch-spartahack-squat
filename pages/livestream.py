@@ -12,7 +12,12 @@ from utils import get_mediapipe_pose
 from process_frame import ProcessFrame
 from thresholds import get_thresholds_beginner, get_thresholds_pro
 
-st.title('Squat Analysis')
+st.title('Livestream video for Squat Analysis')
+st.markdown('''Instructions:
+- Stand in front of the camera
+- Make sure you squat and record your video
+- Click on the download button to download the video
+''')
 mode = st.radio('Select Mode', ['Beginner', 'Pro'], horizontal=True)
 
 thresholds = None 

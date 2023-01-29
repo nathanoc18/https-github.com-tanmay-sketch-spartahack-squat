@@ -13,7 +13,7 @@ from utils import get_mediapipe_pose
 from process_frame import ProcessFrame
 from thresholds import get_thresholds_beginner, get_thresholds_pro
 
-st.title("Squat Analysis")
+st.title("Upload Video")
 
 mode = st.radio('Select Radio',['Beginner','Pro'], horizontal=True)
 
