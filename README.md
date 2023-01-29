@@ -1,6 +1,6 @@
-# Squat and Deadlift Computer Vision: SpartaHack
+# Barbell Squats Computer Vision Project: SpartaHack
 
-This project aims to use computer vision techniques to analyze and improve squat and deadlift form.
+This project aims to use computer vision techniques to analyze and improve your squat form.
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 * NumPy
 * Streamlit_webrtc
 
-Run the following command in your pipenv (virtual environment):
+**Run the following command in your pipenv (virtual environment):**
 
 `streamlit run demo.py`
 
