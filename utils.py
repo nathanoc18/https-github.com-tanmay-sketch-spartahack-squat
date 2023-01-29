@@ -16,16 +16,16 @@ def draw_rounded_rect(img, rect_start, rect_end, corner_width, box_color):
     cv2.rectangle(img, (x1+w, y1+w),(x2-w,y2-w), box_color, -1)
 
     #draw filled ellipses
-    cv2.ellipse(img, (x1+w,y1+w), (w,w), 
+    cv2.ellipse(img, (int(x1+w),int(y1+w)), (int(w),int(w)), 
         angle=0, startAngle=-90, endAngle=-180, color=box_color, thickness=-1)
     
-    cv2.ellipse(img, (x2 - w,y1+w), (w,w),
+    cv2.ellipse(img, (int(x2 - w),int(y1+w)), (int(w),int(w)),
         angle=0, startAngle=0, endAngle=-90, color=box_color, thickness=-1)
     
-    cv2.ellipse(img, (x1+w,y2-w),(w,w),
+    cv2.ellipse(img, (int(x1+w),int(y2-w)),(int(w),int(w)),
         angle=0, startAngle=90, endAngle=180, color=box_color, thickness=-1)
     
-    cv2.ellipse(img, (x2 - w),(y2 - w), (w,w),
+    cv2.ellipse(img, (int(x2 - w),int(y2 - w)), (int(w),int(w)),
         angle=0, startAngle=0, endAngle=90, color=box_color, thickness=-1)
     
     return img
@@ -125,4 +125,4 @@ def get_mediapipe_pose(
                                     min_detection_confidence = min_detection_confidence,
                                     min_tracking_confidence = min_tracking_confidence
                                  )
-    return 
+    return pose

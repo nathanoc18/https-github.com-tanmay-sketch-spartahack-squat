@@ -11,4 +11,17 @@ These instructions will get you a copy of the project up and running on your loc
 * Mediapipe
 * OpenCV
 * NumPy
+* Streamlit_webrtc
+
+Run the following command in your pipenv (virtual environment):
+
+`streamlit run demo.py`
+
+Streamlit often tends to work better with `pipenv` than `venv`. In order to install your virtual environment, change to your project directory and run the following commands. 
+
+`pip install pipenv`
+
+Activating your shell (pipenv): `pipenv shell` 
+
+`exit` command should deactivate your environment
 
